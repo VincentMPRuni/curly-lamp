@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title ="Resolucion">Ejercicio 1: Project Euler</title>
+</head>
+<body style="background-color:#9EC4E3;">
+
+<center><h1 style="color:#00008B; background-color:#077590; font-family:algerian;"><sub>Nuestro</sub> <u>Primer ejercicio:</u><sup>Desarrollado</sup></h1></center>
+<center><pre><b><u>Enunciado de la pregunta 
+(1):</u></b></pre></center>
+<p> Si enumeramos todos los números naturales menores de 10 que son múltiplos de 3 o 5, obtenemos 3, 5, 6 y 9. La suma de estos múltiplos es 23. <em>Encuentra la suma de todos los múltiplos de 3 y 5 menores de 1000. </em></p>
+
+<b>Resultado:</b> <span id="txtResultado"></span>
+
+    <script>// (Descripción el proceso lógico)
+        let resultado = 0; // (La parte central del proceso operativo, se encuentra en la correcta estructuración de su bucle)
+        for (let i = 0; i < 1000; i++) { // (Usamos la variable let, para delimitar las operaciones generadoras en función a i)
+          if (i % 3 == 0 || i % 5 == 0) { // (Definimos aquí los residuos de i en función a 3, y a 5; siendo en ambos casos su residuo 0 ) - Lo cual implica que ambos números son divisores de i.
+            resultado += i; //(Le sumamos i siempre, y cuando se cumplan las condiciones definidas anteriormente: "multiplo de 3, o de 5")
+          }
+        } 
+
+        document.getElementById("txtResultado").innerHTML = resultado;
+    </script>
+
+<center><p>(Reflexión) <br><cite>- Richard Hamming</cite> dijo: “El propósito de la computación es la comprensión, no los números.”</p></center>
+<center><p>(Muchas Gracias)</p></center>
+<p>Vídeo referencial<cite> de ATL Academy: </cite><a href="https://www.youtube.com/@atl.academy" target="_blank">La página de ATL Academy (by Lucas Moy)</a>.</p>
+<p>Estimado maestro, seguiré practicando para entender mejor este bonito mundo que es la programación, por el momento recien me estoy acoplando a sus procesos, pero cada vez me va gustando más; muchas gracias por su apoyo.</p>
+<center><img src="https://www.einstieg-informatik.de/wp-content/uploads/2019/12/project-euler.png"></center>
+<center><textarea name="comentarios" rows="10%" cols="80%">Escribe aquí tus comentarios</textarea></center>
+</body>
+</html>
